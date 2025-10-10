@@ -209,36 +209,7 @@ namespace Практика04_02
             }
         }
 
-      private void Delete_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                if (selectedOrder == null)
-                {
-                    MessageBox.Show("Выберите заказ для удаления!");
-                    return;
-                }
-
-                MessageBoxResult result = MessageBox.Show(
-                    "Вы уверены, что хотите удалить этот заказ?",
-                    "Подтверждение удаления",
-                    MessageBoxButton.YesNo);
-
-                if (result == MessageBoxResult.Yes)
-                {
-                    orders.Remove(selectedOrder);
-                    RefreshDataGrid();
-                    ClearInputFields();
-                    OrderManager.SaveOrdersData(orders);
-
-                    MessageBox.Show("Заказ удален!");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при удалении заказа: {ex.Message}");
-            }
-        }
+      
 
         protected override void OnClosed(EventArgs e)
         {
