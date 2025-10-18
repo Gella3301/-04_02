@@ -52,7 +52,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Добавить" Click="Add_Click" Width="80" Background="Transparent" Margin="5" />
                 <Button Content="Сохранить" Click="Update_Click" Width="80" Background="Transparent" Margin="5" />
-                <Button Content="Удалить"  Width="80" Background="Transparent" Margin="5"/>
+                <Button Content="Удалить"  Click="Delete_Click" Width="80" Background="Transparent" Margin="5"/>
             </StackPanel>
         </StackPanel>
     </Grid>

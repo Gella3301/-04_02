@@ -55,7 +55,7 @@ namespace Практика04_02
             }
             else if (login == "admin" && password1 == "0000")
             {
-                new Manager().Show();
+                new AdminWindow().Show();
             }
             else {
                 MessageBox.Show("Неверный логин или пароль!");
